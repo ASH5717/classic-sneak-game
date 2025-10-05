@@ -92,6 +92,11 @@ class game:
                 self.applex = (self.applex // 25) * 25
                 self.appley = random.randint(0, 700)
                 self.appley = (self.appley // 25) * 25
+                while self.applex in self.spositionx[0:-1] and self.appley in self.spositiony[0:-1]:
+                    self.applex = random.randint(0, 700)
+                    self.applex = (self.applex // 25) * 25
+                    self.appley = random.randint(0, 700)
+                    self.appley = (self.appley // 25) * 25
 
 
 
